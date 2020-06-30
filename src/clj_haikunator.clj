@@ -146,8 +146,12 @@
 
 (defn ^String haikunate
   ([] (haikunate 9999 "-"))
-  ([^Long max-number] (haikunate max-number "-"))
-  ([^Long max-number ^String delimiter]
+  ([^Long max-number] (haikunate max-number nil))
+  ([^Long max-number
+    {:keys [adjectives delimiter nouns]
+     :or {adjectives adjectives
+          delimiter "-"
+          nouns nouns}}]
    (if (zero? max-number)
      (str (choice adjectives) delimiter (choice nouns))
      (str (choice adjectives) delimiter (choice nouns)
