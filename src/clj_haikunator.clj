@@ -97,6 +97,7 @@
    "lake"
    "leaf"
    "meadow"
+   "mint"
    "moon"
    "morning"
    "mountain"
@@ -130,8 +131,7 @@
    "waterfall"
    "wave"
    "wildflower"
-   "wind"
-   "wood"])
+   "wind"])
 
 (def secure-random (SecureRandom.))
 
