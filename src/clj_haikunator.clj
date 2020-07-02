@@ -135,13 +135,13 @@
 
 (def secure-random (SecureRandom.))
 
-(defn ^Long rand-int [^Long n]
+(defn ^Long secure-rand-int [^Long n]
   (int
     (* n (.nextDouble secure-random))))
 
 (defn choice [xs]
   (if (seq xs)
-    (nth xs (rand-int (count xs)))
+    (nth xs (secure-rand-int (count xs)))
     nil))
 
 (defn ^String haikunate
@@ -155,4 +155,4 @@
    (if (zero? max-number)
      (str (choice adjectives) delimiter (choice nouns))
      (str (choice adjectives) delimiter (choice nouns)
-       delimiter (rand-int (inc max-number))))))
+       delimiter (secure-rand-int (inc max-number))))))
