@@ -2,7 +2,7 @@
 
 [![Clojars Project](https://img.shields.io/clojars/v/io.staticweb/clj-haikunator.svg)](https://clojars.org/io.staticweb/clj-haikunator)
 
-A Heroku-like random name generator based on https://github.com/usmanbashir/haikunator.
+A Heroku-like random name generator based on [usmanbashir/haikunator](https://github.com/usmanbashir/haikunator).
 
 ## Install
 
