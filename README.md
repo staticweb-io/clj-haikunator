@@ -1,4 +1,4 @@
-# spec-forms
+# clj-haikunator
 
 [![Clojars Project](https://img.shields.io/clojars/v/io.staticweb/clj-haikunator.svg)](https://clojars.org/io.staticweb/clj-haikunator)
 
